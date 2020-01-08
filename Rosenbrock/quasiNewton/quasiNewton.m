@@ -1,13 +1,11 @@
 function [sol,Xit,nit] = quasiNewton(x,tol)
     % Cette fonction utilise la methode du quasi-newton pour trouver le
     % minumum du fonction du Rosenbrock
-    
     % On commence par l'intialisation:
     nit = 1;
     D = eye(2,2);
     p = 10^(-3);
     Xit = [];
-    
     % On boucle infiniment
     while true
         % On resoudre D * d = -gradFR(x)

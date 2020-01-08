@@ -17,5 +17,4 @@ function [r1] = rechercheDuPas(x,d,p0,tolR)
           break
         end
     end
-
 end

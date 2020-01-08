@@ -1,7 +1,5 @@
-function [r1] = rechercheDuPas(x,d,p0,tolR)
-  
+function [r1] = rechercheDuPas(x,d,p0,tolR)  
     % Cette fonction sert à trouver la pas optimale.
-    
     % On commence par l'intialisation:
     r1 = p0;
     j = 1;
@@ -17,5 +15,4 @@ function [r1] = rechercheDuPas(x,d,p0,tolR)
           break
         end
     end
-
 end

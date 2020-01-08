@@ -7,7 +7,7 @@ function [sol,xit,nit]=gradientPasOptimal(x0,tol)
     x=x0;
     while( norm(grad)>tol) && (i<10^5)    
         d=-grad;   
-        rho=RechercheduPas(x,d,rho0,tolR);
+        rho=rechercheDuPas(x,d,rho0,tolR);
         x=x+rho*d;
         xit=[xit;x'];
         grad=gradFR(x); 
